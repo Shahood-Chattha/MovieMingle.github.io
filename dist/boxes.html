@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Movies Slide Carousel</title>
+    <style>
+      .carousel-container {
+        max-width: 100%;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .carousel {
+        display: flex;
+        animation: scrollCarousel 2s linear infinite;
+      }
+
+      .carousel-item {
+        flex: 0 0 200px; /* adjust the size of movie posters here */
+        margin: 0 5px; /* adjust the spacing between movie posters here */
+        opacity: 0.5; /* adjust the opacity of non-showcased movie posters here */
+        transition: opacity 0.5s ease;
+      }
+
+      .carousel-item.center {
+        flex: 0 0 300px; /* adjust the size of showcased movie poster here */
+        opacity: 1;
+      }
+
+      @keyframes scrollCarousel {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="carousel-container">
+      <div class="carousel">
+        <!-- Movie posters go here -->
+        <div class="w-200 h-auto carousel-item">
+          <img src="../pngs/God father'.jpg" alt="Movie 1" />
+        </div>
+        <div class="w-200 h-auto carousel-item center">
+          <img src="../pngs/God father'.jpg" alt="Movie 2" />
+        </div>
+        <div class="w-200 h-auto carousel-item">
+          <img src="../pngs/God father'.jpg" alt="Movie 3" />
+        </div>
+        <!-- Add more movie posters here -->
+      </div>
+    </div>
+
+    <script>
+      // JavaScript to add fading effect to carousel
+      const carouselItems = document.querySelectorAll(".carousel-item");
+      const carouselContainer = document.querySelector(".carousel-container");
+
+      carouselContainer.addEventListener("mouseover", () => {
+        carouselItems.forEach((item) => {
+          if (!item.classList.contains("center")) {
+            item.style.opacity = "0.3"; // adjust the opacity of non-showcased movie posters on hover
+          }
+        });
+      });
+
+      carouselContainer.addEventListener("mouseout", () => {
+        carouselItems.forEach((item) => {
+          if (!item.classList.contains("center")) {
+            item.style.opacity = "0.5"; // reset the opacity of non-showcased movie posters on mouseout
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

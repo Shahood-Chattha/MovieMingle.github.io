@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../pngs/film-solid.svg" />
+    <title>MovieMingle</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.1/tailwind.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/e77035bf95.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Pacifico"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="w-full h-full bg-cover bg-fixed bg-center">
+    <!-- navigation -->
+    <nav
+      class="py-4 fixed w-full z-50"
+      style="
+        background-image: linear-gradient(
+          to bottom,
+          rgb(5, 21, 28),
+          rgb(4, 84, 113)
+        );
+      "
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex">
+            <div class="flex m-2 flex-col items-start translate-y-2">
+              <i class="fa-solid fa-film fa-xl"></i>
+            </div>
+            <a
+              href="../dist/boxes.html"
+              class="text-white text-2xl font-bold"
+              style="font-family: Pacifico"
+            >
+              MovieMingle</a
+            >
+          </div>
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-4">
+              <a
+                href="./index.html"
+                class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >Home</a
+              >
+              <a
+                href="#"
+                class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >Movies</a
+              >
+              <a
+                href="#"
+                class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >TV Shows</a
+              >
+              <a
+                href="#footer"
+                class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >Contact</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navigation -->
+
+    <!-- search bar -->
+
+    <div
+      class="flex justify-center pt-24 items-center h-screen bg-cover bg-fixed bg-center"
+      style="background-image: url(../pngs/movies\ poster.jpg)"
+    >
+      <div class="w-full md:w-2/3 lg:w-1/2 px-4">
+        <form class="relative">
+          <input
+            type="text"
+            placeholder="Search for movies..."
+            class="py-2 pr-10 pl-4 block w-full appearance-none leading-normal border border-black text-white rounded-md bg-gray-800 focus:bg-gray-900 focus:outline-none"
+          />
+          <button type="submit" class="absolute right-0 top-0 mt-3 mr-3">
+            <svg class="h-4 w-4 fill-current text-white" viewBox="0 0 20 20">
+              <path
+                d="M18.16 16.34l-4.13-4.13a6.5 6.5 0 1 0-.7.7l4.13 4.13a1.5 1.5 0 0 0 2.12-2.12zM6.5 11a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0z"
+              />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- searchbar -->
+
+    <!-- main content -->
+    <div class="relative">
+      <img
+        src="../pngs/Furturistic_blue/modern-business-background-with-digital-technology-design/ABSTRACT_WALLPAPER_Mesa_de_trabajo_1.jpg"
+        alt="background"
+        class="w-full h-auto"
+      />
+      <div class="absolute top-0 flex">
+        <div class="flex z-20 w-1/6">
+          <img
+            src="../pngs/God father'.jpg"
+            alt="left-image"
+            class="w-full h-auto mt-8 mb-40 ml-16 rounded-lg"
+          />
+        </div>
+        <div class="flex z-10 w-1/4">
+          <img
+            src="../pngs/movies.jpg"
+            alt="main-image"
+            class="w-full ml-8 h-auto rounded-lg"
+          />
+        </div>
+
+        <div class="flex z-20 w-1/6">
+          <img
+            src="../pngs/public_enemies.jpg"
+            alt="right-image"
+            class="w-full h-auto mb-8 mt-40 mr-6 rounded-lg"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- main content -->
+
+    <!-- about section -->
+
+    <div
+      class="bg-gradient-to-br from-zinc-500 to-blue-gray-900 py-16 px-8 md:px-16"
+    >
+      <div class="max-w-6xl mx-auto">
+        <div
+          class="flex flex-col md:flex-row md:items-center md:justify-between"
+        >
+          <div class="md:w-1/2">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+              About Movie Mingle
+            </h2>
+            <p
+              class="text-lg text-blue-gray-200"
+              style="
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                  sans-serif;
+              "
+            >
+              Movie Mingle is a cutting-edge movie recommendation platform that
+              uses advanced AI algorithms to suggest the perfect movie for every
+              mood and occasion. Our mission is to provide an immersive and
+              personalized movie experience to our users.
+            </p>
+          </div>
+
+          <div class="w-full lg:w-1/2 md:w-1/2">
+            <div class="relative">
+              <div class="slider-container">
+                <div class="slider flex w-60 h-auto">
+                  <img
+                    src="../pngs/God father'.jpg"
+                    alt="Movie 1"
+                    class="flex-shrink-0"
+                  />
+                  <img
+                    src="../pngs/pexels-errin-casano-2356045.jpg"
+                    alt="Movie 2"
+                    class="flex-shrink-0"
+                  />
+                  <img
+                    src="../pngs/public_enemies.jpg"
+                    alt="Movie 3"
+                    class="flex-shrink-0"
+                  />
+                  <!-- Add more movie posters here as needed -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- about section -->
+
+    <!-- footer -->
+    <footer
+      id="footer"
+      class="bg-gray-900 pt-10 pb-8 w-full"
+      style="
+        background-image: linear-gradient(
+          to bottom,
+          rgb(4, 84, 113),
+          rgb(5, 21, 28)
+        );
+      "
+    >
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap">
+          <div class="w-full lg:w-1/3">
+            <h3 class="text-3xl text-white font-bold">Movie Mingle</h3>
+            <p class="mt-4 mb-4 text-gray-500">
+              Discover the best movies to watch.
+            </p>
+            <p class="text-gray-500">
+              © 2023 Movie Mingle. All Rights Reserved.
+            </p>
+          </div>
+          <div class="w-full lg:w-1/3 lg:ml-auto mt-12 lg:mt-0">
+            <h3 class="text-3xl text-white font-bold">Policy</h3>
+            <ul class="list-reset mt-4">
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a
+                  href="./Privacy Policy/index.html"
+                  class="text-gray-500 no-underline hover:no-underline"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a
+                  href="./Terms and Conditions/index.html"
+                  class="text-gray-500 no-underline hover:no-underline"
+                  >Terms and Conditions</a
+                >
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a
+                  href="./Cookie Policy/index.html"
+                  class="text-gray-500 no-underline hover:no-underline"
+                  >Cookie Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="w-full lg:w-1/3 lg:ml-auto mt-12 lg:mt-0">
+            <h3 class="text-3xl text-white font-bold">Contact Us</h3>
+            <ul class="list-reset mt-4">
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a
+                  href="#"
+                  class="text-gray-500 no-underline hover:no-underline"
+                  >Email: moviemingle309@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
